@@ -5,7 +5,7 @@ import config from './config/index'
 async function bootstrap() {
   try {
     await mongoose.connect(config.database_url as string)
-    console.log('database added')
+    console.log('🛢 database added')
 
     app.listen(config.port, () => {
       console.log(`Example app listening on port ${config.port}`)
